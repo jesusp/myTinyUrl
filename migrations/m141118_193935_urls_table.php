@@ -13,8 +13,8 @@ class m141118_193935_urls_table extends Migration
     		"url"=>Schema::TYPE_TEXT." NOT NULL",
     		"tiny"=>Schema::TYPE_STRING." NOT NULL"
     		]);
-    	$this->createIndex("uniqueURL",$tableName,["url"],true);
-    	$this->createIndex("uniqueTiny",$tableName,["tiny"],true);
+    	$this->createIndex("uniqueURL",$tableName,"url",true);
+    	$this->createIndex("uniqueTiny",$tableName,"tiny",true);
     }
 
     public function safeDown()
